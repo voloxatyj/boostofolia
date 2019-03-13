@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,900i');
+html{
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Roboto",
+	sans-serif;
+}
+h1{
+	font-family:900i;
+}
+.carousel-inner{
+	display: flex;
+	justify-content: flex-start;
+	align-content: flex-end;
+}
