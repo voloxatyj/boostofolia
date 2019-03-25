@@ -8,6 +8,9 @@ body,
     height: 100vh;
     overflow-x: hidden;
     box-sizing: border-box;
+    position: relative;
+    display: inline-grid;
+    overflow: auto;
 }
 
 button,
@@ -33,14 +36,17 @@ img,
 }
 
 .slide1 {
+    z-index: 5;
     background-image: url(../img/1.jpeg);
 }
 
 .slide2 {
+    z-index: 5;
     background-image: url(../img/2.jpeg);
 }
 
 .slide3 {
+    z-index: 5;
     background-image: url(../img/5.jpeg);
 }
 
@@ -91,7 +97,11 @@ img,
 /*Top menu*/
 header {
     display: grid;
-    height: 27%;
+    position: relative;
+    top: 15%;
+    margin-bottom: 2%;
+    height: auto;
+    width: 100%;
 }
 
 .top_header {
@@ -363,6 +373,7 @@ header {
     display: grid;
     grid-template-rows: 1fr 1fr;
     position: relative;
+    width: 100%;
 }
 
 .main {
@@ -386,7 +397,7 @@ header {
     background-color: #dedfe0;
     border-radius: 5%;
     width: 45vh;
-    height: 90%;
+    height: auto;
     display: inline-grid;
     text-align: center;
     perspective: 200vh;
@@ -445,7 +456,8 @@ header {
 .section_video {
     display: inline-grid;
     position: relative;
-    top: 10vh;
+    top: 20%;
+    width: 100%;
 }
 
 .row_video {
@@ -540,13 +552,14 @@ video {
     font-family: "regular";
     height: auto;
     text-align: center;
+    width: 100%;
 }
 
 .section_OURWORKS {
     display: grid;
     height: auto;
-    top: 7%;
-    grid-template-rows: 30vh 20vh 10vh;
+    top: 40%;
+    width: 100%;
     position: relative;
     text-align: center;
 
@@ -554,6 +567,7 @@ video {
 
 .second_block {
     display: inline-grid;
+    width: 100%;
 }
 
 .title_menu h6 {
@@ -884,8 +898,14 @@ video {
     color: #fff;
 }
 
-< !-- FOOOOOTER !-- > .Footer {
+/*
+==========================================
+                FOOTER
+==========================================
+*/
+.Footer {
     display: grid;
+    width: 100%;
     position: relative;
     text-align: center;
     justify-content: center;
@@ -894,10 +914,12 @@ video {
 .sectionGetInTouch {
     position: relative;
     top: 10%;
+    width: 100%;
 }
 
 .FooterInput {
     display: flex;
+    width: 100%;
     position: relative;
     justify-content: center;
     margin-bottom: 7%;
@@ -940,6 +962,7 @@ video {
     grid-template-rows: repeat(2, 25vh);
     grid-template-columns: repeat(2, 60vh);
     grid-gap: 15vh;
+    justify-content: center;
 }
 
 .mat-label {
@@ -1028,7 +1051,7 @@ button {
     display: block;
     cursor: pointer;
     height: 10vh;
-    width: 45vh;
+    width: 35vh;
 }
 
 .FooterButton {
